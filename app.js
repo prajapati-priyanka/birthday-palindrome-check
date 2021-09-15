@@ -239,8 +239,8 @@ function clickHandler() {
         
        
     } else {
-      message = "Hey, You Missed To Enter A Date";
-      showOutput();
+      
+      showOutput("Hey, You Missed To Enter A Date");
     }
     hideLoader();
   }, 4000);
