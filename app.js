@@ -209,7 +209,7 @@ function clickHandler() {
       if (isPalindrome) {
         hideLoader();
        
-        showOutput("Yayy!!, Your Birthday Is A Palindrome.🥳");
+        showOutput("Yayy!! Your Birthday Is A Palindrome.🥳");
        
       } else {
         var [counterNext, nextDate] = getNextPalindromeDate(date);
@@ -218,7 +218,7 @@ function clickHandler() {
 
             hideLoader();
          
-            showOutput(`The previous palindrome date is ${previousDate.day}-${
+            showOutput(`Oops!! Your Birthday is not a Palindrome. The previous palindrome date is ${previousDate.day}-${
                 previousDate.month
               }-${previousDate.year}, you missed it by ${counterPrevious} ${
                 counterPrevious === 1 ? "day" : "days"
@@ -227,7 +227,7 @@ function clickHandler() {
            hideLoader();
            
             showOutput(
-                varmsg1 = `The next palindrome date is ${nextDate.day}-${
+                `Oops!! Your Birthday  is not a Palindrome. The next palindrome date is ${nextDate.day}-${
                    nextDate.month
                  }-${nextDate.year}, you missed it by ${counterNext} ${
                    counterNext === 1 ? "day" : "days"
